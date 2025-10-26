@@ -34,16 +34,16 @@ This project implements Prim’s and Kruskal’s algorithms to determine the Min
 
 - If the number of edges in the MST is less than V-1, the graph is considered disconnected, and a warning is printed, indicating that the MST is incomplete.
 
-#### MSTResult (Common Class for Both Algorithms):
+### MSTResult (Common Class for Both Algorithms):
 
-### Storing Results:
+#### Storing Results:
 
 - The MSTResult includes the list of edges that form the minimum spanning tree, the total cost of these edges, and the number of operations performed during the process.
 
-### Operations Counting:
+#### Operations Counting:
 
 - Both algorithms track the number of operations, such as unions (for Kruskal) and edge extractions (for Prim), which helps evaluate the efficiency of each algorithm.
 
-### Execution Time:
+#### Execution Time:
 
 - The execution time of the algorithm is measured in milliseconds, which is crucial for performance analysis.
