@@ -10,29 +10,29 @@ This project implements Prim’s and Kruskal’s algorithms to determine the Min
 
 #### Data Structure for Union-Find (DSU):
 
-The DSU (Disjoint Set Union) data structure is used to track connected components of the graph to avoid cycles. Each node has a parent, and the components are merged using union by rank.
+- The DSU (Disjoint Set Union) data structure is used to track connected components of the graph to avoid cycles. Each node has a parent, and the components are merged using union by rank.
 
 #### Edge Sorting:
 
-The edges of the graph are sorted in ascending order of weight. Kruskal's algorithm adds edges to the MST starting with the lightest ones, ensuring the tree has the minimum possible weight.
+- The edges of the graph are sorted in ascending order of weight. Kruskal's algorithm adds edges to the MST starting with the lightest ones, ensuring the tree has the minimum possible weight.
 
 #### Disconnection Check:
 
-After adding edges to the MST, the algorithm checks if the number of edges is less than V-1 (where V is the number of vertices). If so, the graph is disconnected, and a warning is printed.
+- After adding edges to the MST, the algorithm checks if the number of edges is less than V-1 (where V is the number of vertices). If so, the graph is disconnected, and a warning is printed.
 
 ### Prim's Algorithm:
 
 #### Priority Queue for Edge Selection:
 
-A priority queue is used to select the edge with the minimum weight at each step. This ensures the greedy nature of Prim's algorithm, selecting the smallest possible edge at every step, thus constructing the minimum spanning tree.
+- A priority queue is used to select the edge with the minimum weight at each step. This ensures the greedy nature of Prim's algorithm, selecting the smallest possible edge at every step, thus constructing the minimum spanning tree.
 
 #### Adjacency List Traversal:
 
-The algorithm uses an adjacency list to represent the graph. As each new node is added to the MST, all its adjacent edges are checked, and those leading to unvisited nodes are added to the priority queue.
+- The algorithm uses an adjacency list to represent the graph. As each new node is added to the MST, all its adjacent edges are checked, and those leading to unvisited nodes are added to the priority queue.
 
 #### Disconnection Check:
 
-If the number of edges in the MST is less than V-1, the graph is considered disconnected, and a warning is printed, indicating that the MST is incomplete.
+- If the number of edges in the MST is less than V-1, the graph is considered disconnected, and a warning is printed, indicating that the MST is incomplete.
 
 #### MSTResult (Common Class for Both Algorithms):
 
