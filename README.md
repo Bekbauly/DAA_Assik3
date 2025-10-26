@@ -47,3 +47,18 @@ This project implements Prim’s and Kruskal’s algorithms to determine the Min
 #### Execution Time:
 
 - The execution time of the algorithm is measured in milliseconds, which is crucial for performance analysis.
+
+## Input Data
+
+| Category | Vertices | Graphs |
+|----------|----------|--------|
+| Small | 5-25 | 5 | 
+| Medium | 30-300 | 10 | 
+| Large | 350-1000 | 10 | 
+| Extra Large | 1300-2000 | 3 | 
+
+## Results
+
+![img.png](data/image1.jpg)
+![img.png](data/image2.jpg)
+![img.png](data/image3.jpg)
